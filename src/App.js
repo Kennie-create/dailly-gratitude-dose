@@ -1,6 +1,11 @@
 import "./App.css";
 import { useState } from "react";
-import Affirmations from "./Affirmations.jsx"
+import Affirmations from "./Affirmations.jsx";
+import Layout from "./Layout.jsx"
+
+const todaysDate = () => {
+  return ("today")
+}
 
 function App() {
 
@@ -16,19 +21,20 @@ function App() {
 
   if (welcomePage) {
     return (
-      <main class="full-height background-violet">
-        <div class="title-and-button">
-        <h1> Your daily dose of gratitude awaits </h1>
-        <button onClick={dailyDosePage} class="button-font"> Open </button>
-        </div>
-      </main>
+      <Layout>
+        <h1> Your gratitude dose for {todaysDate()} </h1>
+        <button onClick={dailyDosePage} className="button-font">
+          {" "}
+          Open{" "}
+        </button>
+      </Layout>
     );
   } else {
     return (
-      <main class="full-height background-violet">
+      <Layout>
        <Affirmations/>
-        <button onClick={returnToWelcomePage} class="button-font"> Finish </button>
-      </main>
+        <button onClick={returnToWelcomePage} className="button-font"> Finish </button>
+      </Layout>
     );
   }
 
