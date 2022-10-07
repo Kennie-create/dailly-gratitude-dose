@@ -1,21 +1,38 @@
 import "./App.css";
 import { useState } from "react";
 import Affirmations from "./Affirmations.jsx";
-import Layout from "./Layout.jsx"
+import Layout from "./Layout.jsx";
 
 const todaysDate = () => {
-  return ("today")
+  const today = new Date();
+  const day = today.getDate();
+  const month = today.toLocaleString("default", { month: "long" });
+  const year = today.getFullYear();
+
+  // const fullDate = month + " " + day + "," + year OR: 
+  const fullDate = `${month} ${day}${dayEnding(day)}, ${year}`;
+
+  return fullDate;
+};
+
+const dayEnding = (day) => {
+  if (day > 3 && day < 21) return 'th';
+  switch (day % 10) {
+    case 1:  return "st";
+    case 2:  return "nd";
+    case 3:  return "rd";
+    default: return "th";
+  }
 }
 
 function App() {
-
   const [welcomePage, setWelcomePage] = useState(true);
 
   function dailyDosePage() {
     setWelcomePage(false);
   }
 
-  function returnToWelcomePage(){
+  function returnToWelcomePage() {
     setWelcomePage(true);
   }
 
@@ -32,13 +49,14 @@ function App() {
   } else {
     return (
       <Layout>
-       <Affirmations/>
-        <button onClick={returnToWelcomePage} className="button-font"> Finish </button>
+        <Affirmations />
+        <button onClick={returnToWelcomePage} className="button-font">
+          {" "}
+          Finish{" "}
+        </button>
       </Layout>
     );
   }
-
-
 }
 
 export default App;
