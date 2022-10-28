@@ -42,7 +42,7 @@ function App() {
         <h1> Your gratitude dose for {todaysDate()} </h1>
         <button onClick={dailyDosePage} className="button-font">
           {" "}
-          Open{" "}
+          Reveal{" "}
         </button>
       </Layout>
     );
@@ -52,7 +52,7 @@ function App() {
         <Affirmations />
         <button onClick={returnToWelcomePage} className="button-font">
           {" "}
-          Finish{" "}
+          All I need is within me now{" "}
         </button>
       </Layout>
     );
