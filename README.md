@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Grateful for today
+
+A daily dose of positive affirmations to start or conclude your day. [Try it out](https://grateful-for-today.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
