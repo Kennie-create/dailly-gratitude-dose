@@ -52,6 +52,7 @@ code {
 
 .button-font {
   font-family: 'Pompiere' , cursive;
+  color:rgb(81, 7, 56)
 }
 
 .title-and-button{
@@ -60,4 +61,7 @@ code {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+button {
 }

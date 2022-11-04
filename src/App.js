@@ -52,7 +52,7 @@ function App() {
         <Affirmations />
         <button onClick={returnToWelcomePage} className="button-font">
           {" "}
-          All I need is within me now{" "}
+          Done{" "}
         </button>
       </Layout>
     );
