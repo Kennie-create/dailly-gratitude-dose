@@ -44,6 +44,9 @@ function App() {
           {" "}
           Reveal{" "}
         </button>
+        <div className="test-image">
+          <img src="Images/lavender.png" className="test" alt="" />
+        </div>
       </Layout>
     );
   } else {

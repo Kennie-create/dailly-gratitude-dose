@@ -3,7 +3,7 @@
   src: local('Pompiere'), url(/public/fonts/Pompiere-Regular.ttf) format('truetype');
 }
 :root {
-  --violet: #b4a7d6ff;
+  /* --violet: #b4a7d6ff; */
   --pink: rgb(245, 189, 226);
   --blue: rgb(170, 207, 245);
   --white: #fff;
@@ -16,6 +16,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
   font-family: 'Pompiere', cursive;
+  /* background-color: lavender; */
 }
 
 h1 {
@@ -61,7 +62,17 @@ code {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+};
 
-button {
-}
+.test-image{
+  position:fixed;
+    bottom:0px; 
+    left:50%; 
+  opacity: 0.7;
+};
+
+@media (max-width: 500px) {
+  body {
+    background-color: purple;
+  }
+};
