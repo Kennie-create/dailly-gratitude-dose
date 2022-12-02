@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'Pompiere';
-  src: local('Pompiere'), url(/public/fonts/Pompiere-Regular.ttf) format('truetype');
+  font-family: "Pompiere";
+  src: local("Pompiere"),
+    url(/public/fonts/Pompiere-Regular.ttf) format("truetype");
 }
 :root {
   /* --violet: #b4a7d6ff; */
@@ -10,12 +11,13 @@
   --dark-violet: rgb(58, 44, 91);
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
-  font-family: 'Pompiere', cursive;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Pompiere", cursive;
   /* background-color: lavender; */
 }
 
@@ -25,7 +27,7 @@ h1 {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -48,37 +50,36 @@ code {
 
 .full-height {
   min-height: 100vh;
-  position:relative;
+  position: relative;
 }
 
 .button-font {
-  font-family: 'Pompiere' , cursive;
-  color:rgb(81, 7, 56)
+  font-family: "Pompiere", cursive;
+  color: rgb(81, 7, 56);
 }
 
-.title-and-button{
+.title-and-button {
   text-align: center;
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
- .test-image{
+.test-image {
   position: fixed;
-    top: 0px; 
-    width: 100%;
-    z-index: -1;
-    opacity: 0.8;
-} 
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
 
 .flower-image {
   border-radius: 20px;
-
 }
 
 @media (max-width: 500px) {
   body {
-    background-color: purple;
+    background-color: #b4a7d6ff;
   }
 }

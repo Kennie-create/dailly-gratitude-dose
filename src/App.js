@@ -45,7 +45,7 @@ function App() {
     return (
       <React.Fragment>
         <div className="test-image">
-          <img src="Images/flower.jpg" className="flower-image" alt="" />
+          <img src="Images/new-flower.png" className="flower-image" alt="" />
         </div>
 
         <Layout>
