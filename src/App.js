@@ -10,10 +10,7 @@ const todaysDate = () => {
   const month = today.toLocaleString("default", { month: "long" });
   const year = today.getFullYear();
 
-  // const fullDate = month + " " + day + "," + year OR:
-  const fullDate = `${month} ${day}${dayEnding(day)}, ${year}`;
-
-  return fullDate;
+  return `${month} ${day}${dayEnding(day)}, ${year}`;
 };
 
 const dayEnding = (day) => {
